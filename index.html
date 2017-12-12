@@ -1,60 +1,92 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <title>Bootstrap</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 </head>
+
 <body>
-  <img src="http://fakeimg.pl/150/" alt="fakeimage">
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-    Duis id elementum risus, nec suscipit lectus. Aliquam metus lacus, 
-    rhoncus sit amet magna nec, dignissim euismod orci. Suspendisse id 
-    lacus rhoncus, dapibus mauris et, ornare erat. Phasellus egestas eu 
-    orci sit amet pulvinar. Aenean eget lorem ac mi tristique volutpat. 
-    Nam elit massa, finibus vitae gravida at, lobortis eget tellus. 
-  </p>
-  <button type="button">Oui</button>
-  <button type="button">Non</button>
-  <h1>Lorem Ipsum</h1>
-  <p>Aenean eget lorem ac mi tristique volutpat. 
-  Nam elit massa, finibus vitae gravida at, lobortis eget tellus.</p>
-  <a href="#">Super</a>
-  <img src="http://fakeimg.pl/300/" alt="fakeimg">
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-    Duis id elementum risus, nec suscipit lectus. Aliquam metus lacus, 
-    rhoncus sit amet magna nec, dignissim euismod orci. Suspendisse id 
-    lacus rhoncus, dapibus mauris et, ornare erat. Phasellus egestas eu 
-    orci sit amet pulvinar. Aenean eget lorem ac mi tristique volutpat. 
-    Nam elit massa, finibus vitae gravida at, lobortis eget tellus. 
-  </p>
-  <img src="http://fakeimg.pl/300/" alt="fakeimg">
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-    Duis id elementum risus, nec suscipit lectus. Aliquam metus lacus, 
-    rhoncus sit amet magna nec, dignissim euismod orci. Suspendisse id 
-    lacus rhoncus, dapibus mauris et, ornare erat. Phasellus egestas eu 
-    orci sit amet pulvinar. Aenean eget lorem ac mi tristique volutpat. 
-    Nam elit massa, finibus vitae gravida at, lobortis eget tellus. 
-  </p>
-  <img src="http://fakeimg.pl/300/" alt="fakeimg">
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-    Duis id elementum risus, nec suscipit lectus. Aliquam metus lacus, 
-    rhoncus sit amet magna nec, dignissim euismod orci. Suspendisse id 
-    lacus rhoncus, dapibus mauris et, ornare erat. Phasellus egestas eu 
-    orci sit amet pulvinar. Aenean eget lorem ac mi tristique volutpat. 
-    Nam elit massa, finibus vitae gravida at, lobortis eget tellus. 
-  </p>
-  <img src="http://fakeimg.pl/300/" alt="fakeimg">
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-    Duis id elementum risus, nec suscipit lectus. Aliquam metus lacus, 
-    rhoncus sit amet magna nec, dignissim euismod orci. Suspendisse id 
-    lacus rhoncus, dapibus mauris et, ornare erat. Phasellus egestas eu 
-    orci sit amet pulvinar. Aenean eget lorem ac mi tristique volutpat. 
-    Nam elit massa, finibus vitae gravida at, lobortis eget tellus. 
-  </p>
+  <!-- SIDEBAR -->
+  <!-- I used the documentation of Bootstrap and the column layout i found there for trying to cut the page in two column -->
+<!-- it doesn't work  -->
+
+<!-- FIRST COLUMN PART -->
+  <div class="container bg-dark float-md-left float-lg-left float-xl-left" style="width: 40%; height: 100%;">
+    <div class="row">
+      <div class="col">
+        <div class="container-fluid bgdark d-flex align-items-center">
+          <div class="row">
+            <div class="col-md-3 col-xs-1 p-l-0 p-r-0" id="sidebar">
+              <img class="rounded-circle" src="http://fakeimg.pl/150/" alt="fakeimage">
+              <p class="text-white">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id elementum risus, nec suscipit lectus. Aliquam metus lacus, rhoncus sit amet magna nec, dignissim euismod orci. Suspendisse id lacus rhoncus, dapibus mauris et, ornare erat. Phasellus egestas
+                eu orci sit amet pulvinar. Aenean eget lorem ac mi tristique volutpat. Nam elit massa, finibus vitae gravida at, lobortis eget tellus.
+              </p>
+              <button class="btn btn-success" type="button">Oui</button>
+              <button class="btn btn-danger" type="button">Non</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- I don't understand why i can't center anything -->
+
+<!-- SECOND COLUMN PART -->
+
+<!-- Here I using a card because this part seems different from others element in the shape -->
+  <div class="card-fluid">
+    <div class="col">
+      <div class="row">
+        <!-- ENTETE -->
+        <h1>Lorem Ipsum</h1>
+        <p>Aenean eget lorem ac mi tristique volutpat. Nam elit massa, finibus vitae gravida at, lobortis eget tellus.</p>
+        <a class="btn btn-primary" href="#">Super</a>
+        <!-- FIN ENTETE -->
+      </div>
+    </div>
+  </div>
+<!-- Here I'm using the grid properties of Bootsrap and build my div like a table, it works -->
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <!-- 1ER BLOC -->
+      <img src="http://fakeimg.pl/300/" alt="fakeimg">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id elementum risus, nec suscipit lectus. Aliquam metus lacus, rhoncus sit amet magna nec, dignissim euismod orci. Suspendisse id lacus rhoncus, dapibus mauris et, ornare erat. Phasellus egestas
+        eu orci sit amet pulvinar. Aenean eget lorem ac mi tristique volutpat. Nam elit massa, finibus vitae gravida at, lobortis eget tellus.
+      </p>
+    </div>
+      <div class="col">
+        <!-- 2EME BLOC -->
+      <img src="http://fakeimg.pl/300/" alt="fakeimg">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id elementum risus, nec suscipit lectus. Aliquam metus lacus, rhoncus sit amet magna nec, dignissim euismod orci. Suspendisse id lacus rhoncus, dapibus mauris et, ornare erat. Phasellus egestas
+        eu orci sit amet pulvinar. Aenean eget lorem ac mi tristique volutpat. Nam elit massa, finibus vitae gravida at, lobortis eget tellus.
+      </p>
+    </div>
+      <div class="w-100"></div>
+      <div class="col">
+        <!-- 3EME BLOC -->
+      <img src="http://fakeimg.pl/300/" alt="fakeimg">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id elementum risus, nec suscipit lectus. Aliquam metus lacus, rhoncus sit amet magna nec, dignissim euismod orci. Suspendisse id lacus rhoncus, dapibus mauris et, ornare erat. Phasellus egestas
+        eu orci sit amet pulvinar. Aenean eget lorem ac mi tristique volutpat. Nam elit massa, finibus vitae gravida at, lobortis eget tellus.
+      </p>
+    </div>
+      <div class="col">
+         <!-- 4EME BLOC -->
+        <img src="http://fakeimg.pl/300/" alt="fakeimg">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id elementum risus, nec suscipit lectus. Aliquam metus lacus, rhoncus sit amet magna nec, dignissim euismod orci. Suspendisse id lacus rhoncus, dapibus mauris et, ornare erat. Phasellus egestas
+          eu orci sit amet pulvinar. Aenean eget lorem ac mi tristique volutpat. Nam elit massa, finibus vitae gravida at, lobortis eget tellus.
+        </p>
+      </div>
+    </div>
+  </div>
+
 </body>
+
 </html>
